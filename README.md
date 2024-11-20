@@ -76,6 +76,25 @@ The data set contains the following diseases:
 
 ## Conclusions
 
+- **Conclusion 1**: 84.76% Training accuracy and 55.46% Validation accuracy. (overfit)
+  > Baseline model without data augmentation or additional techniques.
+  > - overfit
+
+- **Conclusion 2**: 57.53% Training accuracy and 48.11% Validation accuracy.  
+  > Applied data augmentation.
+  > - underfit
+
+- **Conclusion 3**: 62.37% Training accuracy and 46.99% Validation accuracy.  
+  > Applied data augmentation and added one dropout layer.
+  > - Possible underfit
+
+- **Conclusion 4**: 94.98% Training accuracy and 60.42% Validation accuracy.  
+  > Applied class rebalancing to address data imbalance with Batch Normalization (50 Epoch).
+  > - overfit
+
+- **Conclusion 5**: ~90% Training accuracy and 86.65% Validation accuracy.  
+  > Applied class rebalancing to address data imbalance without Batch Normalization.
+
 ### 1. Model Generalization
 - The model demonstrates strong **training accuracy**, reaching close to **~90%**, while validation accuracy stabilizes at **~86%**. 
 - The slight gap between training and validation performance suggests the model generalizes well to unseen data.
